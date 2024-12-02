@@ -44,7 +44,7 @@ function isReportSafeLax(report: number[]) {
 
 let safeReports = 0;
 
-const input = await open("./2024/day2/input.txt", "r");
+const input = await open("./src/2024/day2/input.txt", "r");
 
 for await (const line of input.readLines()) {
 	const report = line.trim().split(" ").map(Number);
@@ -55,4 +55,4 @@ for await (const line of input.readLines()) {
 }
 await input.close();
 
-console.log(`day 2 part 2 result is ${safeReports}`);
+console.log(`part 2 = ${safeReports}`);

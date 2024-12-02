@@ -3,7 +3,7 @@ import { open } from "fs/promises";
 const map1 = new Map<number, number>();
 const map2 = new Map<number, number>();
 
-const input = await open("./2024/day1/input.txt", "r");
+const input = await open("./src/2024/day1/input.txt", "r");
 
 for await (const line of input.readLines()) {
 	const values = line.trim().split("   ").map(Number);
@@ -34,4 +34,4 @@ for (const key of map1.keys()) {
 	acc += map1.get(key)! * map2.get(key)! * key;
 }
 
-console.log(`day 1 part 2 result is ${acc}`);
+console.log(`part 2 = ${acc}`);
