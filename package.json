@@ -1,0 +1,27 @@
+{
+	"name": "aoc",
+	"version": "1.0.0",
+	"description": "Advent of code solutions.",
+	"type": "module",
+	"main": "main.ts",
+	"scripts": {
+		"start": "node --import tsimp/import ./main.ts"
+	},
+	"keywords": [
+		"advent-of-code",
+		"aoc"
+	],
+	"author": "Francisco Hauva <phauva@proton.me>",
+	"license": "MIT",
+	"devDependencies": {
+		"@eslint/js": "^9.16.0",
+		"@types/node": "^22.10.1",
+		"eslint": "^9.16.0",
+		"globals": "^15.13.0",
+		"tsimp": "^2.0.12",
+		"typescript-eslint": "^8.17.0"
+	},
+	"engines": {
+		"node": "^22.0.0"
+	}
+}
